@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 100px;
+    background-image: url(http://utkunungunlugu.weebly.com/uploads/2/6/8/5/26852845/200589429.jpg);
+
+}
+
+.calculator{
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    /* width: 600px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.calculator-input{
+    width: 100%;
+    font-size: 50%;
+    height: 60%;
+    border: none;
+    background-color: darkgray;
+    color: da;
+    text-align: right;
+    padding-left: 20%;
+    padding-right: 20;
+
+}
+
+button{
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 50px;
+    color: darkorange;
+
+}
+
+button:hover{
+    background-color: #eaeaea;
+}
+.operator{
+    color:darkblue;
+    font-size: 50px;
+
+}
+.clear{
+    background-color: #f0595f;
+    border-color: #b0353a;
+    color: #fff;
+}
+.clear:hover{ 
+    background-color: #f17377;
+}
+.equal-sign{
+    background-color: #2e86c0;
+    border-collapse: #337cac;
+    color: #fff;
+    grid-area: 2/4/6/5;
+}
+
+
+.calculator-keys{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    border:1px ;
+}
